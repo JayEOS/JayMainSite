@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Begin - Strear Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="PopsLogo.png" alt="Strear Group" class="logo-image">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">My Work</a>
+                <a href="contact.html" class="active">Contact Us</a>
+                <a href="free-book.html">Free Book</a>
+            </div>
+            
+            <!-- Mobile Burger Menu -->
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">My Work</a>
+                <a href="contact.html" class="mobile-nav-link active">Contact Us</a>
+                <a href="free-book.html" class="mobile-nav-link">Free Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Audio Play Button -->
+    <div class="audio-controls">
+        <button id="playPauseBtn" class="control-btn">
+            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1 class="hero-headline">Ready for the next chapter?</h1>
+            <div class="hero-intro">
+                <p>If you're navigating a moment that matters and want a thoughtful partner, let's talk.</p>
+                <p>The first conversation is simply that—a place to pause, reflect, and see what's possible.</p>
+            </div>
+            <a href="mailto:jay@streargroup.com?subject=Let's%20talk%20about%20what's%20possible&body=Thank%20you%20for%20your%20inquiry!%20We%20will%20get%20back%20to%20you%20within%2048%20hours." class="cta-button primary">Schedule a Conversation →</a>
+        </div>
+    </section>
+
+    <!-- The Invitation Section -->
+    <section class="invitation-section">
+        <div class="container">
+            <div class="content-block">
+                <h2 class="section-headline">A conversation, not a commitment.</h2>
+                <div class="section-body">
+                    <p>We begin with a single meeting — a chance to explore what's working, what's stuck, and what might be possible.</p>
+                    <p>You'll leave with clarity, whether or not we continue together.</p>
+                    <p>Our role is to listen, challenge, and support — to meet you where you are and move with you toward what matters most.</p>
+                    <p><strong>Jay Strear</strong><br>
+                    <a href="tel:3109636790" class="method-link">(310) 963-6790</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-content">
+                    <h2 class="form-headline">Let's start the conversation</h2>
+                    <p class="form-subtitle">Tell us a bit about what you're working through, and we'll be in touch soon.</p>
+                    
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization" class="form-label">Organization</label>
+                            <input type="text" id="organization" name="organization" class="form-input">
+                        </div>
+                        
+                        <div class="form-group message-group">
+                            <label for="message" class="form-label">What's on your mind?</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your challenges, goals, or what you'd like to explore together..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send message →</button>
+                    </form>
+                </div>
+                
+                <div class="form-sidebar">
+                    <div class="sidebar-content">
+                        <h3 class="sidebar-headline">What to expect</h3>
+                        <div class="sidebar-list">
+                            <div class="sidebar-item">
+                                <span class="sidebar-number">01</span>
+                                <p>We'll respond personally within 24 hours</p>
+                            </div>
+                            <div class="sidebar-item">
+                                <span class="sidebar-number">02</span>
+                                <p>We'll schedule a 30-minute exploratory call</p>
+                            </div>
+                            <div class="sidebar-item">
+                                <span class="sidebar-number">03</span>
+                                <p>You'll leave with clarity on next steps</p>
+                            </div>
+                        </div>
+                        
+                        <blockquote class="sidebar-quote">
+                            <p>"Thank you for reaching out. We'll be in touch soon to schedule your first conversation."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternate Connection Paths -->
+         <!--
+    <section class="alternate-paths">
+        <div class="container">
+            <div class="content-block">
+                <h2 class="section-headline">Prefer another way to connect?</h2>
+                <div class="section-body">
+                    <p>You can reach us directly by email or phone.</p>
+                    <p>We'll respond personally — no bots, no forms, just people.</p>
+                </div>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3 class="method-title">Email</h3>
+                        <a href="mailto:hello@thestreargroup.com" class="method-link">hello@thestreargroup.com</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <h3 class="method-title">Phone</h3>
+                        <a href="tel:+1234567890" class="method-link">(123) 456-7890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Closing Ethos Banner -->
+    <section class="closing-ethos">
+        <div class="container">
+            <div class="content-block">
+                <h2 class="ethos-headline">"We believe in you and expect from you.<br>Heart and discipline."</h2>
+                <div class="ethos-content">
+                    <p>It's how we begin every engagement — with empathy and expectation, in equal measure.</p>
+                    <p>The work starts here, with one honest conversation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
